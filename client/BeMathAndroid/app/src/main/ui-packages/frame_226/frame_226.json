@@ -1,15 +1,14 @@
 {
-  "name": "component_8",
+  "name": "frame_226",
   "version": 32,
   "source-key": {
     "type": "figma",
-    "file": "K2ezGXH1okHi0Vqx6vDDWK",
-    "node": "106:277",
-    "version": "4267510699",
-    "component-id": "9905084461c03c356cd2f86b814504f16e3c3f36"
+    "file": "Db5MsPZ0YHsYUxBQoBzoUd",
+    "node": "102:252",
+    "version": "4302927835",
+    "component-id": "f3e6964ddff68910673af2963bdbf0d5da66e828"
   },
-  "default": "Component 8",
-  "documentation": "dddd",
+  "default": "Frame 226",
   "design": {
     "atoms": [
       {
@@ -455,7 +454,7 @@
       }
     ],
     "modes": {
-      "Component 8": {
+      "Frame 226": {
         "rules": [
           {
             "id": "top_level",
@@ -466,24 +465,23 @@
               "Frame 212",
               "Frame 210"
             ],
-            "clip-content": "false"
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            }
           },
           {
             "id": "01:56",
-            "margin": {
-              "left": "164.5078125",
-              "top": "76.9619140625",
-              "right": "165.4921875",
-              "bottom": "743.0380859375"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "164.5078125"
               },
-              "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+              "vertical": {
+                "attachment": "start",
+                "offset": "76.9619140625"
               }
             },
             "font-weight": "700.0",
@@ -503,8 +501,25 @@
           },
           {
             "id": "Group 213",
-            "margin": {
-              "top": "115.0"
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "115.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "729.0"
+              }
             },
             "is-structured": "false",
             "children": [
@@ -521,13 +536,25 @@
               "right": "12.0",
               "bottom": "8.0"
             },
-            "margin": {
-              "left": "75.0",
-              "top": "514.0",
-              "right": "75.0",
-              "bottom": "302.0"
-            },
             "border-radius": "99.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "75.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "514.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
             "arrangement": "row",
             "main-axis-align": "start",
             "cross-axis-align": "start",
@@ -549,8 +576,15 @@
           },
           {
             "id": "Frame 210",
-            "margin": {
-              "bottom": "767.0"
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "77.0"
+              }
             },
             "is-structured": "false",
             "children": [
@@ -597,10 +631,17 @@
           },
           {
             "id": "Frame 222",
-            "margin": {
-              "bottom": "346.0"
-            },
             "border-radius": "16.0",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "383.0"
+              }
+            },
             "is-structured": "false",
             "children": [
               "TYPE SOMETHING",
@@ -609,8 +650,24 @@
           },
           {
             "id": "Keyboards / iPhone",
-            "margin": {
-              "top": "436.0"
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "436.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
             },
             "main-axis-align": "start",
             "cross-axis-align": "start",
@@ -4011,7 +4068,7 @@
   },
   "previews": [
     {
-      "design": "Component 8",
+      "design": "Frame 226",
       "size": {
         "width": 390.0,
         "height": 844.0

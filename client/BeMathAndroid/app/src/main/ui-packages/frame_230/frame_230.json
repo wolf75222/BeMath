@@ -1,15 +1,14 @@
 {
-  "name": "component_6",
+  "name": "frame_230",
   "version": 32,
   "source-key": {
     "type": "figma",
-    "file": "K2ezGXH1okHi0Vqx6vDDWK",
-    "node": "104:250",
-    "version": "4260829254",
-    "component-id": "a34ffbd7fdeecf995c9561a1f97d20cd8b9c644b"
+    "file": "Db5MsPZ0YHsYUxBQoBzoUd",
+    "node": "102:251",
+    "version": "4302927835",
+    "component-id": "fe5dc4788234f80503d77d60253d233c15a2ff4b"
   },
-  "default": "Component 6",
-  "documentation": "test",
+  "default": "Frame 230",
   "design": {
     "atoms": [
       {
@@ -18,8 +17,8 @@
         "root": "true"
       },
       {
-        "type": "group",
-        "id": "Frame 210"
+        "type": "text",
+        "id": "01:56"
       },
       {
         "type": "group",
@@ -27,15 +26,75 @@
       },
       {
         "type": "group",
-        "id": "iPhone X, 11 Pro / Light / Base"
+        "id": "Frame 212"
+      },
+      {
+        "type": "vector",
+        "id": "Rectangle 312"
       },
       {
         "type": "group",
-        "id": "Frame 212"
+        "id": "Frame 210"
+      },
+      {
+        "type": "group",
+        "id": "Group 212"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 31"
+      },
+      {
+        "type": "vector",
+        "id": "Ellipse 32"
+      },
+      {
+        "type": "group",
+        "id": "Component 1"
+      },
+      {
+        "type": "group",
+        "id": "Component 2"
+      },
+      {
+        "type": "group",
+        "id": "Component 3"
+      },
+      {
+        "type": "group",
+        "id": "Component 4"
+      },
+      {
+        "type": "group",
+        "id": "Component 5"
+      },
+      {
+        "type": "text",
+        "id": "TEXT"
+      },
+      {
+        "type": "text",
+        "id": "TEXT1"
+      },
+      {
+        "type": "text",
+        "id": "TEXT2"
+      },
+      {
+        "type": "text",
+        "id": "TEXT3"
+      },
+      {
+        "type": "text",
+        "id": "TEXT4"
       },
       {
         "type": "group",
         "id": "Frame 213"
+      },
+      {
+        "type": "group",
+        "id": "iPhone X, 11 Pro / Light / Base"
       },
       {
         "type": "group",
@@ -44,46 +103,6 @@
       {
         "type": "vector",
         "id": "Vector"
-      },
-      {
-        "type": "vector",
-        "id": "Ellipse 25"
-      },
-      {
-        "type": "vector",
-        "id": "Ellipse 27"
-      },
-      {
-        "type": "vector",
-        "id": "Vector 2"
-      },
-      {
-        "type": "vector",
-        "id": "Ellipse 26"
-      },
-      {
-        "type": "vector",
-        "id": "Vector 1"
-      },
-      {
-        "type": "text",
-        "id": "My Friends"
-      },
-      {
-        "type": "text",
-        "id": "Discovery"
-      },
-      {
-        "type": "text",
-        "id": "Your friends haven’t posted their BeReal yet, be the first one."
-      },
-      {
-        "type": "group",
-        "id": "Frame 215"
-      },
-      {
-        "type": "text",
-        "id": "Take your BeReal"
       },
       {
         "type": "group",
@@ -139,51 +158,470 @@
       }
     ],
     "modes": {
-      "Component 6": {
+      "Frame 230": {
         "rules": [
           {
             "id": "top_level",
             "is-structured": "false",
             "children": [
-              "Frame 210",
+              "01:56",
               "Frame 211",
+              "Frame 212",
+              "Rectangle 312",
+              "Frame 210"
+            ],
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            }
+          },
+          {
+            "id": "01:56",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "164.5078125"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "76.9619140625"
+              }
+            },
+            "font-weight": "700.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "01:56",
+            "overflow": "visible",
+            "text-align": "left",
+            "text-size": "20.0",
+            "letter-spacing": "0.8",
+            "line-height": "1.193359375",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "Frame 211",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "165.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "683.0452270507812"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "children": [
+              "Group 212"
+            ],
+            "item-spacing": "32.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Frame 212",
+            "padding": {
+              "left": "12.0",
+              "top": "8.0",
+              "right": "12.0",
+              "bottom": "8.0"
+            },
+            "border-radius": "99.0",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "116.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "778.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "Component 1",
+              "Component 2",
+              "Component 3",
+              "Component 4",
+              "Component 5"
+            ],
+            "item-spacing": "7.0",
+            "background-color": {
+              "alpha": "0.2",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "Rectangle 312",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "173.3408203125"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "416.1490478515625"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "1.73388671875"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "25.97174072265625"
+              }
+            },
+            "vector-content": "rectangle_312.svg"
+          },
+          {
+            "id": "Frame 210",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "77.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Frame 213",
               "iPhone X, 11 Pro / Light / Base"
+            ],
+            "fills": [
+              {
+                "color": {},
+                "opacity": "1.0",
+                "fill-type": "lineargradient",
+                "blend-mode": "normal",
+                "color-stops": [
+                  {
+                    "color": {
+                      "alpha": "1.0",
+                      "hue": "0.0",
+                      "saturation": "0.0",
+                      "value": "0.0"
+                    },
+                    "color-stop-position": "0.0"
+                  },
+                  {
+                    "color": {},
+                    "color-stop-position": "1.0"
+                  }
+                ],
+                "gradient-handle-positions": [
+                  {
+                    "x": "0.5",
+                    "y": "0.0"
+                  },
+                  {
+                    "x": "0.5",
+                    "y": "1.0"
+                  },
+                  {
+                    "x": "0.0",
+                    "y": "0.0"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "Group 212",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "is-structured": "false",
+            "children": [
+              "Ellipse 31",
+              "Ellipse 32"
             ],
             "clip-content": "false"
           },
           {
-            "id": "Frame 210",
-            "margin": {
-              "top": "44.0",
-              "bottom": "375.0"
+            "id": "Ellipse 31",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "-6.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "-6.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "60.0"
+              }
+            },
+            "vector-content": "ellipse_31.svg"
+          },
+          {
+            "id": "Ellipse 32",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "6.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "6.0"
+              }
+            },
+            "vector-content": "ellipse_32.svg"
+          },
+          {
+            "id": "Component 1",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TEXT"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Component 2",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TEXT1"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Component 3",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TEXT2"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Component 4",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TEXT3"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "Component 5",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "arrangement": "row",
+            "main-axis-align": "start",
+            "cross-axis-align": "start",
+            "children": [
+              "TEXT4"
+            ],
+            "item-spacing": "10.0",
+            "clip-content": "false"
+          },
+          {
+            "id": "TEXT",
+            "font-weight": "590.0",
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "PHOTO",
+            "overflow": "visible",
+            "text-size": "12.0",
+            "letter-spacing": "-0.24",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "TEXT1",
+            "font-weight": "590.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "VIDEO",
+            "overflow": "visible",
+            "text-size": "12.0",
+            "letter-spacing": "-0.24",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "TEXT2",
+            "font-weight": "590.0",
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "AUDIO",
+            "overflow": "visible",
+            "text-size": "12.0",
+            "letter-spacing": "-0.24",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "TEXT3",
+            "font-weight": "590.0",
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "TEXT",
+            "overflow": "visible",
+            "text-size": "12.0",
+            "letter-spacing": "-0.24",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "TEXT4",
+            "font-weight": "590.0",
+            "color": {
+              "alpha": "0.6",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "1.0"
+            },
+            "text-content": "IMAGE",
+            "overflow": "visible",
+            "text-size": "12.0",
+            "letter-spacing": "-0.24",
+            "typeface": "SF Pro"
+          },
+          {
+            "id": "Frame 213",
+            "alignment": {
+              "horizontal": {
+                "attachment": "start",
+                "offset": "0.0"
+              },
+              "vertical": {
+                "attachment": "start",
+                "offset": "44.0"
+              }
+            },
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
             },
             "main-axis-align": "start",
             "cross-axis-align": "start",
             "children": [
-              "Frame 212",
-              "Frame 213"
+              "Frame 214"
             ],
-            "clip-content": "false"
-          },
-          {
-            "id": "Frame 211",
-            "margin": {
-              "left": "34.0",
-              "top": "397.0",
-              "right": "33.0"
-            },
-            "main-axis-align": "start",
-            "children": [
-              "Your friends haven’t posted their BeReal yet, be the first one.",
-              "Frame 215"
-            ],
-            "item-spacing": "22.0",
             "clip-content": "false"
           },
           {
             "id": "iPhone X, 11 Pro / Light / Base",
-            "margin": {
-              "bottom": "443.0"
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "390.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "fixed",
+                "value": "44.0"
+              }
             },
             "is-structured": "false",
             "children": [
@@ -193,7 +631,7 @@
             ]
           },
           {
-            "id": "Frame 212",
+            "id": "Frame 214",
             "padding": {
               "left": "18.0",
               "right": "18.0"
@@ -204,61 +642,16 @@
                 "value": "390.0"
               },
               "height-constraints": {
-                "sizing-mode": "proportional",
-                "value": "1.0"
+                "sizing-mode": "fixed",
+                "value": "33.0"
               }
             },
             "arrangement": "row",
             "main-axis-align": "space-between",
             "children": [
-              "Frame 214",
-              "Vector",
-              "Ellipse 25"
+              "Vector"
             ],
             "clip-content": "false"
-          },
-          {
-            "id": "Frame 213",
-            "padding": {
-              "top": "8.0",
-              "bottom": "8.0"
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "390.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "arrangement": "row",
-            "children": [
-              "My Friends",
-              "Discovery"
-            ],
-            "item-spacing": "14.0",
-            "clip-content": "false"
-          },
-          {
-            "id": "Frame 214",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "28.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "28.0"
-              }
-            },
-            "is-structured": "false",
-            "children": [
-              "Ellipse 27",
-              "Vector 2",
-              "Ellipse 26",
-              "Vector 1"
-            ]
           },
           {
             "id": "Vector",
@@ -273,209 +666,6 @@
               }
             },
             "vector-content": "vector.svg"
-          },
-          {
-            "id": "Ellipse 25",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "28.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "28.0"
-              }
-            },
-            "vector-content": "ellipse_25.svg"
-          },
-          {
-            "id": "Ellipse 27",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "6.488037109375"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "7.8167724609375"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "5.638671875"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "6.1734619140625"
-              }
-            },
-            "vector-content": "ellipse_27.svg"
-          },
-          {
-            "id": "Vector 2",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "2.96044921875"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "15.201904296875"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "13.339111328125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "5.9735107421875"
-              }
-            },
-            "vector-content": "vector_2.svg"
-          },
-          {
-            "id": "Ellipse 26",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "15.322265625"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "6.6348876953125"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "6.393798828125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "7.0"
-              }
-            },
-            "vector-content": "ellipse_26.svg"
-          },
-          {
-            "id": "Vector 1",
-            "alignment": {
-              "horizontal": {
-                "attachment": "start",
-                "offset": "10.79443359375"
-              },
-              "vertical": {
-                "attachment": "start",
-                "offset": "14.201904296875"
-              }
-            },
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "13.339111328125"
-              },
-              "height-constraints": {
-                "sizing-mode": "fixed",
-                "value": "5.9735107421875"
-              }
-            },
-            "vector-content": "vector_1.svg"
-          },
-          {
-            "id": "My Friends",
-            "font-weight": "590.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "My Friends",
-            "overflow": "visible",
-            "text-size": "16.0",
-            "letter-spacing": "0.08",
-            "line-height": "1.193359375",
-            "typeface": "SF Pro"
-          },
-          {
-            "id": "Discovery",
-            "font-weight": "590.0",
-            "color": {
-              "alpha": "0.6980392156862745",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "Discovery",
-            "overflow": "visible",
-            "text-size": "16.0",
-            "letter-spacing": "0.08",
-            "line-height": "1.193359375",
-            "typeface": "SF Pro"
-          },
-          {
-            "id": "Your friends haven’t posted their BeReal yet, be the first one.",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "1.0"
-            },
-            "text-content": "Your friends haven’t posted their BeReal yet, be the \nfirst one.",
-            "overflow": "visible",
-            "text-size": "13.0",
-            "letter-spacing": "0.065",
-            "line-height": "1.193359375",
-            "typeface": "SF Pro"
-          },
-          {
-            "id": "Frame 215",
-            "padding": {
-              "left": "22.0",
-              "top": "12.0",
-              "right": "22.0",
-              "bottom": "12.0"
-            },
-            "border-radius": "12.0",
-            "size-constraints": {
-              "width-constraints": {
-                "sizing-mode": "fixed",
-                "value": "142.0"
-              },
-              "height-constraints": {
-                "sizing-mode": "shrink"
-              }
-            },
-            "arrangement": "row",
-            "children": [
-              "Take your BeReal"
-            ],
-            "item-spacing": "10.0",
-            "background-color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.9803921568627451"
-            },
-            "clip-content": "false"
-          },
-          {
-            "id": "Take your BeReal",
-            "font-weight": "590.0",
-            "color": {
-              "alpha": "1.0",
-              "hue": "0.0",
-              "saturation": "0.0",
-              "value": "0.0"
-            },
-            "text-content": "Take your BeReal",
-            "overflow": "visible",
-            "text-size": "12.0",
-            "letter-spacing": "-0.24",
-            "typeface": "SF Pro"
           },
           {
             "id": "Notch",
@@ -511,7 +701,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "308.666748046875"
+                "offset": "308.66650390625"
               },
               "vertical": {
                 "attachment": "start",
@@ -521,7 +711,7 @@
             "size-constraints": {
               "width-constraints": {
                 "sizing-mode": "fixed",
-                "value": "66.661376953125"
+                "value": "66.66162109375"
               },
               "height-constraints": {
                 "sizing-mode": "fixed",
@@ -608,7 +798,7 @@
           {
             "id": "Battery",
             "margin": {
-              "left": "42.333251953125",
+              "left": "42.33349609375",
               "top": "0.002685546875"
             },
             "is-structured": "false",
@@ -625,7 +815,7 @@
             "alignment": {
               "horizontal": {
                 "attachment": "start",
-                "offset": "4.333251953125"
+                "offset": "4.33349609375"
               },
               "vertical": {
                 "attachment": "start",
@@ -795,10 +985,10 @@
   },
   "previews": [
     {
-      "design": "Component 6",
+      "design": "Frame 230",
       "size": {
         "width": 390.0,
-        "height": 487.0
+        "height": 844.0
       }
     }
   ],

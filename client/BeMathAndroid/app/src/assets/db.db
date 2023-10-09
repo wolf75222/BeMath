@@ -1,0 +1,241 @@
+package database
+
+import android.content.Context
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteOpenHelper
+import android.provider.BaseColumns
+
+
+object FeedReaderContract {
+    // Table contents are grouped together in an anonymous object.
+    object FeedEntry : BaseColumns {
+        const val TABLE_NAME = "bemath"
+        const val COLUMN_NAME_TITLE = "title"
+        const val COLUMN_NAME_SUBTITLE = "subtitle"
+    }
+} /* done model User {
+id               String    @id @unique @default(cuid()) // Use auto() for auto-incremented IDs if supported
+username         String    @unique
+email            String    @unique
+createdAt        DateTime  @default(now())
+pfp              String?
+bio              String?
+socialLinks      String[]  @default([]) // Array to store social links
+likedPosts     String[]  @default([]) // Arrays to store liked/disliked items
+dislikedPosts  String[]  @default([])
+likedComments    String[]  @default([])
+dislikedComments String[]  @default([])
+
+ done Posts          Post[] // You might consider renaming this to 'authoredPosts'
+comments         Comment[] // You might consider renaming this to 'authoredComments'
+score            Int? // You might want to add more context or documentation for this field
+active           Boolean
+}
+
+ done model Follow {
+followers        User[]    @relation("Followers")
+following        User[]    @relation("Followers")
+}
+
+done model Post {
+    id            String    @id @unique @default(cuid()) // Use auto() for auto-incremented IDs if supported
+    title         String
+            createdAt     DateTime  @default(now())
+    updatedAt     DateTime  @updatedAt
+    content       String
+            tags          String[]
+    reactionCount Int       @default(0)
+    userId        User
+            views         Int       @default(0)
+    comments      Comment[]
+    author        User      @relation(fields: [userId], references: [id])
+}
+
+done model Comment {
+    id            String   @id @unique @default(cuid()) // Use auto() for auto-incremented IDs if supported
+    content       String
+            createdAt     DateTime @default(now())
+    updatedAt     DateTime @updatedAt
+    modified      Boolean  @default(false)
+    userId        String
+            reactionCount Int      @default(0)
+    PostId      String
+            Post        Post   @relation(fields: [PostId], references: [id])
+    author        User     @relation(fields: [userId], references: [id])
+}*/
+object User : BaseColumns {
+    const val TABLE_NAME_USER = "user"
+    const val COLUMN_NAME_USERNAME = "username"
+    const val COLUMN_NAME_EMAIL = "email"
+    const val COLUMN_NAME_CREATEDAT = "createdat"
+    const val COLUMN_NAME_PFP = "pfp"
+    const val COLUMN_NAME_BIO = "bio"
+    const val COLUMN_NAME_SOCIALLINKS = "sociallinks"
+    const val COLUMN_NAME_LIKEDPOST = "likedpost"
+    const val COLUMN_NAME_DISLIKEDPOST = "dislikedpost"
+    const val COLUMN_NAME_LIKEDCOMMENT = "likedcomment"
+    const val COLUMN_NAME_DISLIKEDCOMMENT = "likedcomment"
+    const val COLUMN_NAME_POST = "post"
+    const val COLUMN_NAME_COMMENTSUSER = "comments"
+    const val COLUMN_NAME_SCORE = "score"
+    const val COLUMN_NAME_ACTIVE = "active"
+
+}
+private const val SQL_CREATE_USER = """
+    CREATE TABLE ${User.TABLE_NAME_USER} (
+            ${BaseColumns._ID} INTEGER PRIMARY KEY,
+            ${User.COLUMN_NAME_USERNAME} TEXT,
+            ${User.COLUMN_NAME_EMAIL} TEXT,
+            ${User.COLUMN_NAME_CREATEDAT} DATE,
+            ${User.COLUMN_NAME_PFP} TEXT,
+            ${User.COLUMN_NAME_BIO} TEXT,
+            ${User.COLUMN_NAME_SOCIALLINKS} TEXT,
+            ${User.COLUMN_NAME_LIKEDPOST} TEXT,
+            ${User.COLUMN_NAME_DISLIKEDPOST} TEXT,
+            ${User.COLUMN_NAME_LIKEDCOMMENT} TEXT,
+            ${User.COLUMN_NAME_DISLIKEDCOMMENT} TEXT,
+            ${User.COLUMN_NAME_POST} INT,
+            ${User.COLUMN_NAME_COMMENTSUSER} INT,
+            ${User.COLUMN_NAME_SCORE} INTEGER,
+            ${User.COLUMN_NAME_ACTIVE} BOOLEAN,
+            FOREIGN KEY (${User.COLUMN_NAME_POST}) REFERENCES Post(${BaseColumns._ID}),
+            FOREIGN KEY (${User.COLUMN_NAME_COMMENTSUSER}) REFERENCES Comment(${BaseColumns._ID})
+)
+"""
+object Follow : BaseColumns {
+    const val TABLE_NAME_FOLLOW = "follower"
+    const val TABLE_NAME_FOLLOW2 = "following"
+    const val COLUMN_NAME_FOLLOWER= "followers"
+    const val COLUMN_NAME_FOLLOWING= "following"
+
+}
+private const val SQL_CREATE_FOLLOW = """
+    CREATE TABLE ${Follow.TABLE_NAME_FOLLOW} (
+            ${BaseColumns._ID} INTEGER PRIMARY KEY,
+            ${Follow.COLUMN_NAME_FOLLOWER} INTEGER ,
+            FOREIGN KEY (${Follow.COLUMN_NAME_FOLLOWER}) REFERENCES User(${BaseColumns._ID})) 
+        
+            """
+
+private const val SQL_CREATE_FOLLOWING = """
+    CREATE TABLE ${Follow.TABLE_NAME_FOLLOW2} (
+            ${BaseColumns._ID} INTEGER PRIMARY KEY,
+            ${Follow.COLUMN_NAME_FOLLOWING} INTEGER,
+            FOREIGN KEY (${Follow.COLUMN_NAME_FOLLOWING}) REFERENCES User(${BaseColumns._ID}) ) 
+"""
+
+object Post : BaseColumns {
+    const val TABLE_NAME_POST = "post"
+    const val COLUMN_NAME_TITLE = "title"
+    const val COLUMN_NAME_CREATEDATPOST = "createdAt"
+    const val COLUMN_NAME_UPDATEAT = "updateAt"
+    const val COLUMN_NAME_CONTENT = "content"
+    const val COLUMN_NAME_TAGS = "tags"
+    const val COLUMN_NAME_REACTIONCOUNT = "reactionCount"
+    const val COLUMN_NAME_USERIDCLE = "UserIdcle"
+    const val COLUMN_NAME_VIEWS = "Views"
+    const val COLUMN_NAME_COMMENTPOST = "Comment"
+    const val COLUMN_NAME_AUTHOR = "Author"
+}
+
+private const val SQL_CREATE_POST = """
+        CREATE TABLE ${Post.TABLE_NAME_POST} (
+                ${BaseColumns._ID} INTEGER PRIMARY KEY,
+                ${Post.COLUMN_NAME_TITLE} TEXT,
+                ${Post.COLUMN_NAME_CREATEDATPOST} DATE,
+                ${Post.COLUMN_NAME_UPDATEAT} DATE,
+                ${Post.COLUMN_NAME_CONTENT} TEXT,
+                ${Post.COLUMN_NAME_TAGS} TEXT,
+                ${Post.COLUMN_NAME_REACTIONCOUNT} INT,
+                ${Post.COLUMN_NAME_CONTENT} TEXT,
+                ${Post.COLUMN_NAME_VIEWS} INTEGER,
+                ${Post.COLUMN_NAME_COMMENTPOST} INTEGER,
+                ${Post.COLUMN_NAME_USERIDCLE} INT,
+                ${Post.COLUMN_NAME_AUTHOR} INTEGER,
+                FOREIGN KEY (${Post.COLUMN_NAME_USERIDCLE}) REFERENCES User(${BaseColumns._ID}),
+                FOREIGN KEY (${Post.COLUMN_NAME_COMMENTPOST}) REFERENCES Comment(${BaseColumns._ID}),
+                FOREIGN KEY (${Post.COLUMN_NAME_AUTHOR}) REFERENCES User(${BaseColumns._ID}) )
+"""
+
+object Comment : BaseColumns {
+    const val TABLE_NAME_COMMENT = "comment"
+    const val COLUMN_NAME_CONTENTCOMMENT = "content"
+    const val COLUMN_NAME_CREATEDATCOMMENT= "createdAt"
+    const val COLUMN_NAME_UPDATEATCOMMENT= "updateAt"
+    const val COLUMN_NAME_MODIFIEDCOMMENT= "modified"
+    const val COLUMN_NAME_USERIDCOMMENT= "userId"
+    const val COLUMN_NAME_REACTIONCOUNTCOMMENT= "reactionCount"
+    const val COLUMN_NAME_POSTIDCOMMENT= "PostId"
+    const val COLUMN_NAME_AUTHORIDCOMMENT= "userId"
+
+
+}
+private const val SQL_CREATE_COMMENT ="""
+    CREATE TABLE ${Comment.TABLE_NAME_COMMENT} (
+            ${BaseColumns._ID} INTEGER PRIMARY KEY,
+            ${Comment.COLUMN_NAME_CONTENTCOMMENT} TEXT,
+            ${Comment.COLUMN_NAME_CREATEDATCOMMENT} DATE,
+            ${Comment.COLUMN_NAME_UPDATEATCOMMENT} DATE,
+            ${Comment.COLUMN_NAME_MODIFIEDCOMMENT} INT,
+            IsEnabled INTEGER,
+            ${Comment.COLUMN_NAME_USERIDCOMMENT} INT,
+            ${Post.COLUMN_NAME_REACTIONCOUNT} INT,
+            ${Comment.COLUMN_NAME_POSTIDCOMMENT} INT,
+            ${Comment.COLUMN_NAME_AUTHORIDCOMMENT} INT,
+            FOREIGN KEY (${Comment.COLUMN_NAME_POSTIDCOMMENT}) REFERENCES Post(${BaseColumns._ID}),
+            FOREIGN KEY (${Comment.COLUMN_NAME_USERIDCOMMENT}) REFERENCES User(${BaseColumns._ID}),
+            FOREIGN KEY (${Comment.COLUMN_NAME_AUTHORIDCOMMENT}) REFERENCES User(${BaseColumns._ID}) )
+                    """
+
+
+
+
+
+
+
+
+//User.put(COLUMN_NAME_CREATEDAT, System.currentTimeMillis());
+//Post.put(COLUMN_NAME_CREATEDATPOST, System.currentTimeMillis());
+//Post.put(COLUMN_NAME_UPDATEAT, System.currentTimeMillis());
+//Comment.put(COLUMN_NAME_CREATEDATCOMMENT, System.currentTimeMillis());
+//Comment.put(COLUMN_NAME_UPDATEATCOMMENT, System.currentTimeMillis());
+private const val SQL_DELETE_USER = "DROP TABLE IF EXISTS ${User.TABLE_NAME_USER}"
+private const val SQL_DELETE_FOLLOW = "DROP TABLE IF EXISTS ${Follow.TABLE_NAME_FOLLOW}"
+private const val SQL_DELETE_FOLLOWING = "DROP TABLE IF EXISTS ${Follow.TABLE_NAME_FOLLOW2}"
+private const val SQL_DELETE_POST = "DROP TABLE IF EXISTS ${Post.TABLE_NAME_POST}"
+private const val SQL_DELETE_COMMENT = "DROP TABLE IF EXISTS ${Comment.TABLE_NAME_COMMENT}"
+
+class FeedReaderDbHelper(context: Context) :
+    SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+    override fun onCreate(db: SQLiteDatabase) {
+        db.execSQL(SQL_CREATE_USER)
+        db.execSQL(SQL_CREATE_FOLLOW)
+        db.execSQL(SQL_CREATE_FOLLOWING)
+        db.execSQL(SQL_CREATE_POST)
+        db.execSQL(SQL_CREATE_COMMENT)
+    }
+
+    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        // This database is only a cache for online data, so its upgrade policy is
+        // to simply to discard the data and start over
+        db.execSQL(SQL_DELETE_USER)
+        db.execSQL(SQL_DELETE_FOLLOW)
+        db.execSQL(SQL_DELETE_FOLLOWING)
+        db.execSQL(SQL_DELETE_POST)
+        db.execSQL(SQL_DELETE_COMMENT)
+
+        onCreate(db)
+    }
+
+    override fun onDowngrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        onUpgrade(db, oldVersion, newVersion)
+    }
+
+    companion object {
+        // If you change the database schema, you must increment the database version.
+        const val DATABASE_VERSION = 1
+        const val DATABASE_NAME = "FeedReader.db"
+    }
+    val dbHelper = FeedReaderDbHelper(context)
+}
+

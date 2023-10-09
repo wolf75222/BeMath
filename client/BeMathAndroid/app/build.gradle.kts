@@ -1,11 +1,12 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.relay") version "0.3.02"
 }
 
 android {
     namespace = "com.bemathandroid"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.bemathandroid"
@@ -44,4 +45,15 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    // compose
+    implementation("androidx.activity:activity-compose:1.7.2")
+    implementation("androidx.compose.ui:ui:1.5.2")
+    // foundation
+    implementation("androidx.compose.foundation:foundation:1.5.2")
+    // material
+    implementation("androidx.compose.material:material:1.5.2")
+    // material3
+    implementation("androidx.compose.material3:material3:1.2.0-alpha08")
+    // Unresolved reference: tooling
+    implementation("androidx.compose.ui:ui-tooling:1.5.2")
 }

@@ -1,11 +1,13 @@
-package com.bemathandroid
-
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.bemathandroid.component6.Component6
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContent {
+            Component6(/* les paramètres, si nécessaires */)
+        }
     }
 }

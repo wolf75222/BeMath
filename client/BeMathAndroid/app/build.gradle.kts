@@ -7,7 +7,13 @@ plugins {
 android {
     namespace = "com.bemathandroid"
     compileSdk = 34
-
+/*ourceSets{
+    main {
+        assets {
+            srcDir('src/main/ui-packages')
+        }
+    }
+}*/
     defaultConfig {
         applicationId = "com.bemathandroid"
         minSdk = 27
